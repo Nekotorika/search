@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Search</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; background: #f8f9fa; }
+        h1 { color: #4285f4; font-size: 3rem; margin-bottom: 20px; }
+        form { width: 100%; max-width: 600px; display: flex; }
+        input[type="text"] { flex: 1; padding: 15px; border: 1px solid #dfe1e5; border-radius: 24px 0 0 24px; outline: none; font-size: 16px; }
+        button { padding: 15px 25px; border: 1px solid #dfe1e5; background: #f8f9fa; border-radius: 0 24px 24px 0; cursor: pointer; border-left: none; }
+        button:hover { background: #eee; }
+    </style>
+</head>
+<body>
+
+    <h1>Search</h1>
+
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" placeholder="検索ワードを入力..." required>
+        <button type="submit">検索</button>
+    </form>
+
+</body>
+</html>
